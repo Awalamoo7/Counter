@@ -18,6 +18,8 @@ class Counter extends Component {
         return <ul>{this.state.tags.map(tag => <li key={tag}>{tag}</li>)}</ul>;
     }
 
+    defaultTag = () => console.log("Shout")
+
     // function (a) {
     //     let x = 0;
     //     x > 2 ? 'It is greater than two' : 'lesser than two' 
@@ -35,6 +37,7 @@ class Counter extends Component {
             {this.renderTags()}
         </div>
         );
+
     }
 
     // getBadgeClasses() {
