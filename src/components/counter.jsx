@@ -18,7 +18,7 @@ class Counter extends Component {
         return <ul>{this.state.tags.map(tag => <li key={tag}>{tag}</li>)}</ul>;
     }
 
-    defaultTag = () => console.log("Shout")
+    defaultTag = () => console.log(`improve the {this.state.count}`)
 
     // function (a) {
     //     let x = 0;
