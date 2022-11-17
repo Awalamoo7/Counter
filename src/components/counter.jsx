@@ -9,7 +9,7 @@ class Counter extends Component {
             <button 
             onClick={()=> this.props.onIncrement(this.props.counter)}
             className='btn btn-secondary btn-sm'>
-                Increment
+                Increments
             </button>
             <button 
             onClick={()=>this.props.onDelete(this.props.counter.id)}
@@ -23,8 +23,8 @@ class Counter extends Component {
     }
 
     getBadgeClasses() {
-        let classes = "badge m-2";
-        classes += (this.props.counter.value === 0) ? " badge-warning" : " badge-primary";
+        let classes = "badge m-2 badge-";
+        classes += (this.props.counter.value === 0) ? " warning" : " primary";
         return classes;
     }
 
